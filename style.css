@@ -1,0 +1,77 @@
+/* Reset margin and padding for all elements, center text */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style for the main heading */
+h1 {
+    background-color: #081b31; /* Dark blue background color */
+    color: #fff; /* White text color */
+    height: 5rem; /* Fixed height */
+    line-height: 5rem; /* Center text vertically */
+}
+
+/* Style for each choice (rock, paper, scissors) */
+.choice {
+    height: 165px; /* Fixed height */
+    width: 165px; /* Fixed width */
+    border-radius: 50%; /* Make the choice circular */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Style for choice hover state */
+.choice:hover {
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: #081b31; /* Dark blue background color on hover */
+}
+
+/* Style for images inside choices */
+img {
+    height: 150px; /* Fixed height */
+    width: 150px; /* Fixed width */
+    object-fit: cover; /* Ensure image covers the entire element */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Container for choices, using flexbox for layout */
+.choices {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center choices horizontally */
+    align-items: center; /* Center choices vertically */
+    gap: 3rem; /* Space between choices */
+    margin: 5rem; /* Margin around the container */
+}
+
+/* Container for the score board, using flexbox for layout */
+.score-board {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center score items horizontally */
+    align-items: center; /* Center score items vertically */
+    font-size: 2rem; /* Font size for score text */
+    margin-top: 3rem; /* Top margin */
+    gap: 5rem; /* Space between score items */
+}
+
+/* Style for user and computer score text */
+#user-score, #com-score {
+    font-size: 4rem; /* Large font size for scores */
+}
+
+/* Container for the message, with top margin */
+.msg-container {
+    margin-top: 5rem; /* Top margin */
+}
+
+/* Style for the message text */
+#msg {
+    background-color: #081b31; /* Dark blue background color */
+    color: #fff; /* White text color */
+    font-size: 2rem; /* Font size */
+    display: inline; /* Inline display */
+    padding: 1rem; /* Padding around text */
+    border-radius: 1rem; /* Rounded corners */
+}
